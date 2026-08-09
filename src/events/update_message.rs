@@ -147,7 +147,7 @@ pub async fn update_message_event(ctx: &serenity::Context, event: &MessageUpdate
                         format!("<@{}>", author.id),
                         true,
                     );
-                    embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/secure.png");
+                    embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/secure.png");
                     log_channel
                         .send_message(&ctx.http, |m| m.set_embed(embed))
                         .await
@@ -186,7 +186,7 @@ pub async fn update_message_event(ctx: &serenity::Context, event: &MessageUpdate
                     format!("{}", user_infractions),
                     true,
                 );
-                embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png");
+                embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png");
                 log_channel
                     .send_message(&ctx.http, |m| m.set_embed(embed))
                     .await
@@ -205,7 +205,7 @@ pub async fn update_message_event(ctx: &serenity::Context, event: &MessageUpdate
                 embed.footer(|f| {
                     f.text("Think this is a mistake? Contact the specified server staff for help")
                 });
-                embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png");
+                embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png");
 
                 user.unwrap()
                     .dm(&ctx.http, |m| m.set_embed(embed))
@@ -233,7 +233,7 @@ pub async fn update_message_event(ctx: &serenity::Context, event: &MessageUpdate
                 format!("||{}||", updated_message),
                 false,
             );
-            embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png");
+            embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png");
             embed.footer(|f| f.text("React with 🚫 to dismiss this infraction"));
             let embed_message_id = log_channel
                 .send_message(&ctx.http, |m| m.set_embed(embed))

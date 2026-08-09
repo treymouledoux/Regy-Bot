@@ -42,7 +42,7 @@ pub async fn update(ctx: Context<'_>) -> Result<(), Error> {
     embed.color(0x565e6e);
     embed.title("Regy Update");
     embed.thumbnail(
-        "https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/update.png",
+        "https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/update.png",
     );
     embed.description("A local update has been initialized.");
     embed.footer(|f| f.text("If the update fails you will be notified automatically."));

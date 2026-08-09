@@ -156,7 +156,7 @@ pub async fn new_message_event(ctx: &serenity::Context, new_message: &serenity::
                         format!("<@{}>", new_message.author.id),
                         true,
                     );
-                    embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/secure.png");
+                    embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/secure.png");
                     log_channel
                         .send_message(&ctx.http, |m| m.set_embed(embed))
                         .await
@@ -197,7 +197,7 @@ pub async fn new_message_event(ctx: &serenity::Context, new_message: &serenity::
                     format!("{}", user_infractions),
                     true,
                 );
-                embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png");
+                embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png");
                 log_channel
                     .send_message(&ctx.http, |m| m.set_embed(embed))
                     .await
@@ -219,7 +219,7 @@ pub async fn new_message_event(ctx: &serenity::Context, new_message: &serenity::
                 embed.footer(|f| {
                     f.text("Think this is a mistake? Contact the specified server staff for help")
                 });
-                embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png");
+                embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png");
 
                 user.unwrap()
                     .dm(&ctx.http, |m| m.set_embed(embed))
@@ -258,7 +258,7 @@ pub async fn new_message_event(ctx: &serenity::Context, new_message: &serenity::
                 false,
             );
             embed.footer(|f| f.text("React with 🚫 to dismiss this infraction"));
-            embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png");
+            embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png");
             let embed_message_id = log_channel
                 .send_message(&ctx.http, |m| m.set_embed(embed))
                 .await

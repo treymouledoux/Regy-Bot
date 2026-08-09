@@ -25,7 +25,7 @@ pub struct RtiPackages {
 }
 
 pub async fn download_rti() {
-    let url = "https://raw.githubusercontent.com/MrEnder0/Regy-Bot/rti_packages/rti_packages.ron";
+    let url = "https://raw.githubusercontent.com/treymouledoux/Regy-Bot/rti_packages/rti_packages.ron";
     let mut response = match get(url) {
         Ok(x) => x,
         Err(e) => {

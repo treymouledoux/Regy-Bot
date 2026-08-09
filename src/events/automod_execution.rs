@@ -69,7 +69,7 @@ pub async fn automod_execution_event(ctx: &serenity::Context, execution: &Action
         false,
     );
     embed.thumbnail(
-        "https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png",
+        "https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png",
     );
     embed.footer(|f| f.text("React with 🚫 to dismiss this infraction"));
     let embed_message_id = log_channel
@@ -108,7 +108,7 @@ pub async fn automod_execution_event(ctx: &serenity::Context, execution: &Action
                 format!("<@{}>", user.id),
                 true,
             );
-            embed.thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/secure.png");
+            embed.thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/secure.png");
             log_channel
                 .send_message(&ctx.http, |m| m.set_embed(embed))
                 .await
@@ -147,7 +147,7 @@ pub async fn automod_execution_event(ctx: &serenity::Context, execution: &Action
         );
         embed.footer(|f| f.text("This message will appear for users with high infraction counts"));
         embed.thumbnail(
-            "https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/warning.png",
+            "https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/warning.png",
         );
         log_channel
             .send_message(&ctx.http, |m| m.set_embed(embed))

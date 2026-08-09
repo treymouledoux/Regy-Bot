@@ -139,7 +139,7 @@ pub async fn nuke(
     embed.field("Nuked by:", ctx.author().name.clone(), true);
     embed.field("Messages nuked:", nuke_size, true);
     embed.thumbnail(
-        "https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/nuke.png",
+        "https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/nuke.png",
     );
     embed.footer(|f| f.text("That was a super epic boom boom!"));
 

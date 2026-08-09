@@ -42,7 +42,7 @@ pub async fn clean(ctx: Context<'_>) -> Result<(), Error> {
             cr.embed(|ce| {
                 ce.title("Cleaner")
                     .description("Found and deleted log folder")
-                    .thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/trashcan.png")
+                    .thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/trashcan.png")
             })
         })
         .await
@@ -71,7 +71,7 @@ pub async fn clean(ctx: Context<'_>) -> Result<(), Error> {
             cr.embed(|ce| {
                 ce.title("Cleaner")
                     .description("Found and deleted log archive")
-                    .thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/trashcan.png")
+                    .thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/trashcan.png")
             })
         })
         .await
@@ -86,7 +86,7 @@ pub async fn clean(ctx: Context<'_>) -> Result<(), Error> {
             cr.embed(|ce| {
                 ce.title("Cleaner")
                     .description("Found and deleted temp folder")
-                    .thumbnail("https://raw.githubusercontent.com/MrEnder0/Regy-Bot/master/.github/assets/trashcan.png")
+                    .thumbnail("https://raw.githubusercontent.com/treymouledoux/Regy-Bot/master/.github/assets/trashcan.png")
             })
         })
         .await

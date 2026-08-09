@@ -65,7 +65,7 @@ pub async fn dev_stats(ctx: Context<'_>) -> Result<(), Error> {
                 .field("RTI package count", rti_length, true)
                 .field("Update helper status", update_helper_available, true)
                 .footer(|fe| {
-                    fe.text("Regy's source can be found at https://github.com/MrEnder0/Regy-Bot")
+                    fe.text("Regy's source can be found at https://github.com/treymouledoux/Regy-Bot")
                 })
         })
     })
